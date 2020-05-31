@@ -13,7 +13,7 @@ jobs:
         with:
           go-version: ^1.13
         id: go
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Get dependencies
         run: |
@@ -22,5 +22,5 @@ jobs:
               curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
               dep ensure
           fi
-      - name: Build
+      - name: Go build
         run: go build -v .
