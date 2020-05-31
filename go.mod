@@ -1,3 +1,3 @@
-module github.com/Matt-Gleich
+module github.com/Matt-Gleich/
 
-go 1.13
+go 1.14
