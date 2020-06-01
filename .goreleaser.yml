@@ -1,0 +1,30 @@
+release:
+  github:
+    owner: Matt-Gleich
+    name: goTemplate
+  prerelease: auto
+before:
+  hooks:
+    - go mod download
+builds:
+  - goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm
+      - arm64
+    goarm:
+      - 6
+      - 7
+brews:
+  - github:
+      owner: Matt-Gleich
+      name: homebrew-taps
+    folder: Formula
+    homepage: 'https://mattglei.ch'
+    description: 'goTemplate'
+    commit_author:
+      name: Matt-Gleich
+      email: matthewgleich@gmail.com
