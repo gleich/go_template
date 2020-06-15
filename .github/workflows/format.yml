@@ -1,11 +1,11 @@
-name: Go Format
+name: Format
 
 on:
   - push
   - pull_request
 
 jobs:
-  format:
+  gofmt:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Go 1.x
@@ -17,5 +17,19 @@ jobs:
         uses: actions/checkout@v2
       - name: Format Code
         run: gofmt -s -w .
+      - name: If Changes, Fail
+        run: git diff --exit-code
+  gomod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.13
+        id: go
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Tidy go mod
+        run: go mod tidy
       - name: If Changes, Fail
         run: git diff --exit-code
