@@ -10,4 +10,4 @@
 
 ## Contributors
 
-1. Matthew Gleich ([@Matt-Gleich]("http://www.github.com/Matt-Gleich"))
+1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
