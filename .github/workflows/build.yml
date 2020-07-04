@@ -1,4 +1,4 @@
-name: Go Build
+name: build
 
 on:
   - push
@@ -21,5 +21,5 @@ jobs:
       - name: Get dependencies
         run: |
           go get -v -t -d ./...
-      - name: Go build
+      - name: Build
         run: go build -v .

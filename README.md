@@ -2,10 +2,10 @@
 
 {{ PROJECT_DESCRIPTION }}
 
-![Go Build](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/Go%20Build/badge.svg)
-![Go Test](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/Go%20Test/badge.svg)
-![Format](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/Format/badge.svg)
-![goreleaser](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/goreleaser/badge.svg)
+![build](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/build/badge.svg)
+![test](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/test/badge.svg)
+![format](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/format/badge.svg)
+![release](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/release/badge.svg)
 
 ## Contributors
 
