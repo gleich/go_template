@@ -19,7 +19,7 @@ builds:
       - 6
       - 7
 brews:
-  - taps:
+  - tap:
       owner: Matt-Gleich
       name: homebrew-taps
     folder: Formula

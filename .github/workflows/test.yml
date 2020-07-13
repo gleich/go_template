@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '*/30 * * * *'  # Runs every hour
+    - cron: '0 * * * *' # Runs every hour
 
 jobs:
   test:
