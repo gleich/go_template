@@ -1,6 +1,10 @@
 name: test
 
-on: ['push', 'pull_request']
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/30 * * * *'  # Runs every hour
 
 jobs:
   test:
