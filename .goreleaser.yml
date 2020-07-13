@@ -1,7 +1,7 @@
 release:
   github:
     owner: Matt-Gleich
-    name: {{ PROJECT_NAME }}
+    name: '{{ PROJECT_NAME }}'
   prerelease: auto
 before:
   hooks:
@@ -19,7 +19,7 @@ builds:
       - 6
       - 7
 brews:
-  - github:
+  - taps:
       owner: Matt-Gleich
       name: homebrew-taps
     folder: Formula
