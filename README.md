@@ -8,8 +8,8 @@
 ![release](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/release/badge.svg)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-
 ## 👥 Contributors
+
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)** (38 contributions)
 
