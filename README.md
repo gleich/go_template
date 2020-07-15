@@ -7,6 +7,12 @@
 ![format](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/format/badge.svg)
 ![release](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/release/badge.svg)
 
-## Contributors
+<!-- DO NOT REMOVE - contributor_list:start -->
 
-1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
+## 👥 Contributors
+
+- **[@Matt-Gleich](https://github.com/Matt-Gleich)** (38 contributions)
+
+- **[@whitesource-bolt-for-github[bot]](https://github.com/apps/whitesource-bolt-for-github)** (1 contribution)
+
+<!-- DO NOT REMOVE - contributor_list:end -->
