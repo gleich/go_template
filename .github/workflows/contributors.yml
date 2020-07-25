@@ -14,3 +14,4 @@ jobs:
       - uses: cjdenio/contributor_list@master
         with:
           commit_message: 📝 Update contributors list
+          max_contributors: 10
