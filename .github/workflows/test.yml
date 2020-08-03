@@ -13,7 +13,7 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set up Go
         uses: actions/setup-go@v2
@@ -23,3 +23,12 @@ jobs:
         run: go get -v -t -d ./...
       - name: Go Test
         run: go test ./...
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Build Image
+        run: docker build -f dev.Dockerfile -t mattgleich/test .
+      - name: Run Image
+        run: docker run mattgleich/test

@@ -7,7 +7,7 @@ on:
     - cron: '0 * * * *' # Runs every hour
 
 jobs:
-  build:
+  go-build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -25,3 +25,17 @@ jobs:
           go get -v -t -d ./...
       - name: Build
         run: go build -v .
+  docker-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Build the image
+        run: docker build -f dev.Dockerfile .
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Build the image
+        run: docker build .
