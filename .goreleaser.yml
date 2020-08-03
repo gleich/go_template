@@ -1,7 +1,7 @@
 release:
   github:
     owner: Matt-Gleich
-    name: '{{ PROJECT_NAME }}'
+    name: 'PROJECT_NAME'
   prerelease: auto
 before:
   hooks:
@@ -24,7 +24,7 @@ brews:
       name: homebrew-taps
     folder: Formula
     homepage: 'https://mattglei.ch'
-    description: '{{ PROJECT_DESCRIPTION }}'
+    description: 'PROJECT_DESCRIPTION'
     commit_author:
       name: Matt-Gleich
       email: matthewgleich@gmail.com
