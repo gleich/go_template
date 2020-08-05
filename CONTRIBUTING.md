@@ -2,14 +2,20 @@
 
 👋 Welcome to PROJECT_NAME! Thank you for showing interesting in contributing to PROJECT_NAME, we would love to have your contribution. Below are some requirements for contributing. Please read carefully!
 
-## Requesting Features/Reporting Bugs
+## 🐛 Requesting Features/Reporting Bugs
 
 1. Click on the "Issues" tab in the repo.
 2. Make sure that the issue does exist already be searching for it.
 3. Pick the issue template.
 4. Fill in the issue template.
 
-## Adding code
+## ➕ Adding code
+
+### ⚠️ Notice
+
+This project uses [golangci-lint](https://github.com/golangci/golangci-lint) for code linting, please install it and format your code with `make lint`
+
+### 🧾 Process
 
 1. Make an issue (see above) and check to make sure it doesn't already exist.
 2. Create a branch with the name being issue number.
