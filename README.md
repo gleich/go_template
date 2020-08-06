@@ -9,6 +9,10 @@ PROJECT_DESCRIPTION
 ![lint](https://github.com/Matt-Gleich/PROJECT_NAME/workflows/lint/badge.svg)
 ![release](https://github.com/Matt-Gleich/PROJECT_NAME/workflows/release/badge.svg)
 
+## 🙌 Contributing
+
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/PROJECT_NAME/CONTRIBUTING.md)
+
 <!-- DO NOT REMOVE - contributor_list:start -->
 
 ## 👥 Contributors
