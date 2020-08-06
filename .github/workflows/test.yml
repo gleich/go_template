@@ -19,16 +19,10 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: ^1.13
-      - name: Get Dependencies
-        run: go get -v -t -d ./...
-      - name: Go Test
-        run: go test ./...
+      - run: make test-go
   docker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Build Image
-        run: docker build -f dev.Dockerfile -t mattgleich/test .
-      - name: Run Image
-        run: docker run mattgleich/test
+      - run: make test-in-docker

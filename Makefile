@@ -8,6 +8,10 @@ build-docker-dev:
 	docker build -f dev.Dockerfile .
 build-docker-dev-lint:
 	docker build -f dev.lint.Dockerfile .
+build-go:
+	go get -v -t -d ./...
+	go build -v .
+	rm PROJECT_NAME
 
 #########
 # Linting
@@ -33,6 +37,7 @@ lint-in-docker:
 #########
 
 test-go:
+	go get -v -t -d ./...
 	go test ./...
 test-in-docker:
 	docker build -f dev.Dockerfile -t mattgleich/PROJECT_NAME:test .
