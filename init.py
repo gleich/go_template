@@ -28,7 +28,7 @@ def ls_files(dir):
 
 
 project_name = input("What is the name of this project?\n").lower()
-project_description = input("\nWhat is the description for this project?\n").lower()
+project_description = input("\nWhat is the description for this project?\n")
 
 cleaned_files = []
 for filename in ls_files("."):

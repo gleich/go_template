@@ -21,6 +21,11 @@ RUN go get ./...
 RUN go build -o goreleaser .
 RUN mv goreleaser /usr/bin
 
+# Install make
+RUN apt-get update && apt-get install make=4.2.1-1.2 -y --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /usr/src/app
 
 CMD ["make", "local-lint"]

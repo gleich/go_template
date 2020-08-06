@@ -31,6 +31,7 @@ lint-hadolint:
 	hadolint dev.lint.Dockerfile
 lint-in-docker:
 	docker build -f dev.lint.Dockerfile -t mattgleich/PROJECT_NAME:lint .
+	docker run mattgleich/PROJECT_NAME:lint
 
 #########
 # Testing
