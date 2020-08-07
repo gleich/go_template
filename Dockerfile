@@ -2,7 +2,7 @@ FROM golang:1.14.6-alpine3.12
 
 # Meta data:
 LABEL maintainer="matthewgleich@gmail.com"
-LABEL description="PROJECT_DESCRIPTION"
+LABEL description="project_description"
 
 # Copying over all the files:
 COPY . /usr/src/app

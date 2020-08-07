@@ -29,6 +29,7 @@ def ls_files(dir):
 
 project_name = input("What is the name of this project?\n").lower()
 project_description = input("\nWhat is the description for this project?\n")
+github_username = input("\nWhat is your github username?\n")
 
 cleaned_files = []
 for filename in ls_files("."):
@@ -47,14 +48,14 @@ for filename in cleaned_files:
         lines = file.readlines()
         for line in lines:
             cleaned_lines.append(
-                line.replace("PROJECT_NAME", project_name).replace(
-                    "PROJECT_DESCRIPTION", project_description
-                )
+                line.replace("project_name", project_name)
+                .replace("project_description", project_description)
+                .replace("github_username", github_username)
             )
     with open(filename, "w") as file:
         file.write("".join(cleaned_lines))
 
-os.system(f"go mod init github.com/Matt-Gleich/{project_name}")
+os.system(f"go mod init github.com/github_username/{project_name}")
 
 print("Everything filled in!\nPlease now delete this file!")
 
