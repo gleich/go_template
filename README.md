@@ -1,4 +1,4 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["github_username", "whitesource-bolt-for-github[bot]"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "cjdenio", "whitesource-bolt-for-github[bot]"]:end -->
 
 # Run `init.py`
 
@@ -16,10 +16,12 @@ project_description
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/github_username/project_name/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-
 ## 👥 Contributors
 
-- **[@github_username](https://github.com/github_username)**
+
+- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+
+- **[@cjdenio](https://github.com/cjdenio)**
 
 - **[@whitesource-bolt-for-github[bot]](https://github.com/apps/whitesource-bolt-for-github)**
 
