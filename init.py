@@ -55,6 +55,18 @@ for filename in cleaned_files:
     with open(filename, "w") as file:
         file.write("".join(cleaned_lines))
 
+with open("main.go", "w") as main_file:
+    main_file.write(
+        """package main
+
+func main() {
+
+}
+"""
+    )
+
+os.remove("go.mod")
+os.remove("go.sum")
 os.system(f"go mod init github.com/github_username/{project_name}")
 
 print("Everything filled in!\nPlease now delete this file!")

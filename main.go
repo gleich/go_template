@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "github.com/sirupsen/logrus"
 
+func main() {
+	logrus.Info("Testing testing")
 }
