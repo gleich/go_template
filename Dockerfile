@@ -9,7 +9,7 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 
 # Installing dependencies/
-RUN go mod download
+RUN go get -v -t -d ./...
 
 # Build the app
 RUN go build -o app .
