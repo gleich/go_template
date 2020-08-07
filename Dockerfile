@@ -11,4 +11,7 @@ WORKDIR /usr/src/app
 # Installing dependencies/
 RUN go mod download
 
-CMD ["go", "run", "main.go"]
+# Build the app
+RUN go build -o app .
+
+CMD ["./app"]
