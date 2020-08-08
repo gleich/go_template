@@ -67,7 +67,7 @@ func main() {
 
 os.remove("go.mod")
 os.remove("go.sum")
-os.system(f"go mod init github.com/github_username/{project_name}")
+os.system(f"go mod init github.com/{github_username}/{project_name}")
 
 print("Everything filled in!\nPlease now delete this file!")
 
