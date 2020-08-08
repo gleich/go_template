@@ -30,6 +30,7 @@ def ls_files(dir):
 project_name = input("What is the name of this project?\n").lower()
 project_description = input("\nWhat is the description for this project?\n")
 github_username = input("\nWhat is your github username?\n")
+project_author_email = input("\nWhat is your email?\n")
 
 cleaned_files = []
 for filename in ls_files("."):
@@ -51,6 +52,7 @@ for filename in cleaned_files:
                 line.replace("project_name", project_name)
                 .replace("project_description", project_description)
                 .replace("github_username", github_username)
+                .replace("project_author_email", project_author_email)
             )
     with open(filename, "w") as file:
         file.write("".join(cleaned_lines))

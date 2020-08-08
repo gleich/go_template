@@ -1,7 +1,7 @@
 FROM golang:1.14
 
 # Meta data:
-LABEL maintainer="matthewgleich@gmail.com"
+LABEL maintainer="project_author_email"
 LABEL description="project_description"
 
 # Copying over all the files:
