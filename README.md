@@ -13,11 +13,11 @@ project_description
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/github_username/project_name/CONTRIBUTING.md)
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/project_name/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
