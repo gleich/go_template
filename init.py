@@ -63,8 +63,12 @@ with open("main.go", "w") as main_file:
     main_file.write(
         """package main
 
-func main() {
+import (
+	"github.com/Matt-Gleich/logoru"
+)
 
+func main() {
+	logoru.Success("Program booted up!")
 }
 """
     )
@@ -72,6 +76,7 @@ func main() {
 os.remove("go.mod")
 os.remove("go.sum")
 os.system(f"go mod init github.com/{github_username}/{project_name}")
+os.system("go get -u github.com/Matt-Gleich/logoru")
 
-print("Everything filled in!\nPlease now delete this file!")
+print("\n\nEverything filled in!\nPlease now delete this file!")
 

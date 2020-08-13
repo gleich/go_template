@@ -1,7 +1,9 @@
 package main
 
-import "github.com/sirupsen/logrus"
+import (
+	"github.com/Matt-Gleich/logoru"
+)
 
 func main() {
-	logrus.Info("Testing testing")
+	logoru.Success("Program booted up!")
 }
