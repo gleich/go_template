@@ -55,6 +55,11 @@ for filename in cleaned_files:
                 .replace("github_username", github_username)
                 .replace("project_author_email", project_author_email)
                 .replace("docker_username", docker_username)
+                .replace("p\\roject_name", "project_name")
+                .replace("p\\roject_description", "project_description")
+                .replace("g\\ithub_username", "github_username")
+                .replace("p\\roject_author_email", "project_author_email")
+                .replace("d\\ocker_username", "docker_username")
             )
     with open(filename, "w") as file:
         file.write("".join(cleaned_lines))

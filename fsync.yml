@@ -1,0 +1,25 @@
+commit_message: 🔄 Update file via sync
+replace:
+  - before: p\roject_name
+    after: project_name
+  - before: p\roject_description
+    after: project_description
+  - before: g\ithub_username
+    after: github_username
+  - before: p\roject_author_email
+    after: project_author_email
+  - before: d\ocker_username
+    after: docker_username
+files:
+  - path: .gitignore
+    source: https://github.com/Matt-Gleich/go_template/blob/master/.gitignore
+  - path: LICENSE.md
+    source: https://github.com/Matt-Gleich/go_template/blob/master/LICENSE.md
+  - path: dev.lint.Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.lint.Dockerfile
+  - path: dev.Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.Dockerfile
+  - path: CONTRIBUTING.md
+    source: https://github.com/Matt-Gleich/go_template/blob/master/CONTRIBUTING.md
+  - path: CODE_OF_CONDUCT.md
+    source: https://github.com/Matt-Gleich/go_template/blob/master/CODE_OF_CONDUCT.md
