@@ -31,6 +31,7 @@ project_name = input("What is the name of this project?\n").lower()
 project_description = input("\nWhat is the description for this project?\n")
 github_username = input("\nWhat is your github username?\n")
 project_author_email = input("\nWhat is your email?\n")
+project_author_full_name = input("\nWhat is your first and last name?\n")
 docker_username = input("\nWhat is your docker username?\n")
 
 cleaned_files = []
@@ -55,6 +56,7 @@ for filename in cleaned_files:
                 .replace("github_username", github_username)
                 .replace("project_author_email", project_author_email)
                 .replace("docker_username", docker_username)
+                .replace("project_author_full_name", project_author_full_name)
                 .replace("p\\roject_name", "project_name")
                 .replace("p\\roject_description", "project_description")
                 .replace("g\\ithub_username", "github_username")
@@ -83,5 +85,5 @@ os.remove("go.sum")
 os.system(f"go mod init github.com/{github_username}/{project_name}")
 os.system("go get -u github.com/Matt-Gleich/logoru")
 
-print("\n\nEverything filled in!\nPlease now delete this file!")
+print("\n\n\n\nEverything filled in!\nPlease now delete this file!")
 
