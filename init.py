@@ -62,6 +62,7 @@ for filename in cleaned_files:
                 .replace("g\\ithub_username", "github_username")
                 .replace("p\\roject_author_email", "project_author_email")
                 .replace("d\\ocker_username", "docker_username")
+                .replace("p\\roject_author_full_name", "project_author_full_name")
             )
     with open(filename, "w") as file:
         file.write("".join(cleaned_lines))
