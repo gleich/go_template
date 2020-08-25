@@ -10,8 +10,8 @@ replace:
     after: project_author_email
   - before: d\ocker_username
     after: docker_username
-  - before: project_author_full_name
-    after: p\roject_author_full_name
+  - before: p\roject_author_full_name
+    after: project_author_full_name
 files:
   - path: .gitignore
     source: https://github.com/Matt-Gleich/go_template/blob/master/.gitignore
