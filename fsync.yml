@@ -19,6 +19,10 @@ files:
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/licenses/MIT_LICENSE.md
   - path: dev.lint.Dockerfile
     source: https://github.com/Matt-Gleich/go_template/blob/master/dev.lint.Dockerfile
+  - path: dev.Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.Dockerfile
+  - path: Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/Dockerfile
   - path: CONTRIBUTING.md
     source: https://github.com/Matt-Gleich/go_template/blob/master/CONTRIBUTING.md
   - path: CODE_OF_CONDUCT.md
@@ -32,6 +36,8 @@ files:
   - path: .github/workflows/release.yml
     source: https://github.com/Matt-Gleich/go_template/blob/master/.github/workflows/release.yml
   - path: .github/workflows/contributors.yml
-    source: https://github.com/Matt-Gleich/go_template/blob/master/.github/workflows/contributors.yml
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/contributors.yml
   - path: .github/workflows/fsync.yml
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/fsync.yml
+  - path: fsync.yml
+    source: https://github.com/Matt-Gleich/go_template/blob/master/fsync.yml
