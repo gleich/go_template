@@ -44,3 +44,4 @@ Once you have those installed please run `make local-test` and `make local-lint`
 ## ℹ️ General
 
 - When you take on an issue please set yourself as the assignee.
+- ⚠️ This project syncs files from other repos. Check `fsync.yml` before editing that file to see where it come from.
