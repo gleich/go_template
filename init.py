@@ -86,5 +86,14 @@ os.remove("go.sum")
 os.system(f"go mod init github.com/{github_username}/{project_name}")
 os.system("go get -u github.com/Matt-Gleich/logoru")
 
+with open("fsync.yml", "r") as fsync_file_read:
+    fsync_content = fsync_file_read.readlines()
+
+with open("fsync.yml", "w") as fsync_file_write:
+    fsync_file_write.write(
+        fsync_content[:-1].join("\n")
+        + "\n    replace:\n      - before: p\roject_name\n        after: project_name\n      - before: p\roject_description\n        after: project_description\n      - before: g\ithub_username\n        after: github_username\n      - before: p\roject_author_email\n        after: project_author_email\n      - before: d\ocker_username\n        after: docker_username\n      - before: p\roject_author_full_name\n        after: project_author_full_name\n"
+    )
+
 print("\n\n\n\nEverything filled in!\nPlease now delete this file!")
 
