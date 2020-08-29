@@ -40,5 +40,5 @@ files:
   - path: .github/workflows/fsync.yml
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/fsync.yml
   - path: fsync.yml
-    ignore_global_replace: true
     source: https://github.com/Matt-Gleich/go_template/blob/master/fsync.yml
+    ignore_global_replace: true

@@ -38,7 +38,7 @@ cleaned_files = []
 for filename in ls_files("."):
     ignore = False
     if not (
-        filename.startswith("./.git")
+        filename.startswith("./.git/")
         or "__pycache__" in filename
         or ".pytest_cache" in filename
         or filename == "./init.py"
@@ -91,9 +91,8 @@ with open("fsync.yml", "r") as fsync_file_read:
 
 with open("fsync.yml", "w") as fsync_file_write:
     fsync_file_write.write(
-        fsync_content[:-1].join("\n")
-        + "\n    replace:\n      - before: p\roject_name\n        after: project_name\n      - before: p\roject_description\n        after: project_description\n      - before: g\ithub_username\n        after: github_username\n      - before: p\roject_author_email\n        after: project_author_email\n      - before: d\ocker_username\n        after: docker_username\n      - before: p\roject_author_full_name\n        after: project_author_full_name\n"
+        "".join(fsync_content[:-1])
+        + "    replace:\n      - before: p\\roject_name\n        after: project_name\n      - before: p\\roject_description\n        after: project_description\n      - before: g\ithub_username\n        after: github_username\n      - before: p\\roject_author_email\n        after: project_author_email\n      - before: d\ocker_username\n        after: docker_username\n      - before: p\\roject_author_full_name\n        after: project_author_full_name\n"
     )
 
 print("\n\n\n\nEverything filled in!\nPlease now delete this file!")
-
