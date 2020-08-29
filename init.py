@@ -85,6 +85,7 @@ os.remove("go.mod")
 os.remove("go.sum")
 os.system(f"go mod init github.com/{github_username}/{project_name}")
 os.system("go get -u github.com/Matt-Gleich/logoru")
+os.system("go mod tidy")
 
 with open("fsync.yml", "r") as fsync_file_read:
     fsync_content = fsync_file_read.readlines()
