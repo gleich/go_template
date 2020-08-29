@@ -1,16 +1,16 @@
 commit_message: 🔄 Update file via sync
 replace:
-  - before: project_name
+  - before: p\roject_name
     after: project_name
-  - before: project_description
+  - before: p\roject_description
     after: project_description
-  - before: github_username
+  - before: g\ithub_username
     after: github_username
-  - before: project_author_email
+  - before: p\roject_author_email
     after: project_author_email
-  - before: docker_username
+  - before: d\ocker_username
     after: docker_username
-  - before: project_author_full_name
+  - before: p\roject_author_full_name
     after: project_author_full_name
 files:
   - path: .gitignore
