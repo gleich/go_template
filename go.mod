@@ -1,6 +1,6 @@
 module github.com/github_username/project_name
 
-go 1.15
+go 1.16
 
 require (
 	github.com/Matt-Gleich/logoru v0.0.0-20200817001912-097ac1695c5f
