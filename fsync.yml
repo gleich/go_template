@@ -1,4 +1,4 @@
-commit_message: 🔄 Update file via sync
+commit_message: 'chore(syncing): sync files to latest version'
 replace:
   - before: p\roject_name
     after: project_name
