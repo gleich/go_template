@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 )
 
 func main() {

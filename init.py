@@ -72,7 +72,7 @@ with open("main.go", "w") as main_file:
         """package main
 
 import (
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 )
 
 func main() {
@@ -87,7 +87,7 @@ os.remove("init.py")
 os.remove(".gitattributes")
 
 os.system(f"go mod init github.com/{github_username}/{project_name}")
-os.system("go get -u github.com/Matt-Gleich/logoru")
+os.system("go get -u github.com/gleich/logoru")
 os.system("go mod tidy")
 
 print("\n\nEverything filled in!")
