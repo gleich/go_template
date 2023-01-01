@@ -1,4 +1,4 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "cjdenio", "whitesource-bolt-for-github[bot]"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "cjdenio", "mend-bolt-for-github[bot]"]:end -->
 
 # Run `init.py`
 
@@ -16,13 +16,13 @@ project_description
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/project_name/blob/master/CONTRIBUTING.md).
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-
 ## 👥 Contributors
+
 
 - **[@gleich](https://github.com/gleich)**
 
 - **[@cjdenio](https://github.com/cjdenio)**
 
-- **[@whitesource-bolt-for-github[bot]](https://github.com/apps/whitesource-bolt-for-github)**
+- **[@mend-bolt-for-github[bot]](https://github.com/apps/mend-bolt-for-github)**
 
 <!-- DO NOT REMOVE - contributor_list:end -->
